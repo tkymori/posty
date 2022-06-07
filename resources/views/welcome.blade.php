@@ -3,7 +3,7 @@
     <head>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="TWITTER_TITLE" />
-        <meta property="og:url" content="https://pracy.herokuapp.com/" />
+        <meta property="og:url" content="https://posty-v2.herokuapp.com/" />
         <meta property="og:title" content="OG_TITLE" />
         <meta property="og:description" content="OG_DESC" />
         <meta property="og:image" content="https://posty-v2.herokuapp.com/images/01.jpg" />
