@@ -2,12 +2,12 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
     <?php
-        if (isset($_GET['result']) && is_numeric($_GET['result'])) {
-            $result = $_GET['result'];
-            if ($result == 1) {
+        if (isset($_GET['trigger']) && is_numeric($_GET['trigger'])) {
+            $trigger = $_GET['trigger'];
+            if ($trigger == 1) {
                 $title = "1ですー";
                 $description = "1のdesc";
-            } else if ($result == 2) {
+            } else if ($trigger == 2) {
                 $title = "222ですー";
                 $description = "2222のdesc";
             }
@@ -17,7 +17,7 @@
                 <meta property="og:url" content="https://posty-v2.herokuapp.com/" />
                 <meta property="og:title" content="{{$title}}" />
                 <meta property="og:description" content="{{$description}}" />
-                <meta property="og:image" content="https://posty-v2.herokuapp.com/images/{{$result}}.jpg" />
+                <meta property="og:image" content="https://posty-v2.herokuapp.com/images/{{$trigger}}.jpg" />
                 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php } ?>
