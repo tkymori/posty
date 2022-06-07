@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+    <?php
+$min = 1;
+$max = 2;
+if (isset($_GET['result']) && is_numeric($_GET['result']) && $_GET['result'] >= $min && $_GET['result'] <= $max) {
+    $result = $_GET['result'];
+    if ($result == 1) {
+        $disc = "index.php?result=1の時のディスクリプション";
+    } else if ($result == 2) {
+        $disc = "index.php?result=2の時のディスクリプション";
+    }
+    ?>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="TWITTER_TITLE" />
         <meta property="og:url" content="https://posty-v2.herokuapp.com/" />
@@ -9,7 +20,20 @@
         <meta property="og:image" content="/images/01.jpg" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<?php }else{ ?>
+    <!-- <meta property="og:type" content="article">
+    <meta property="og:site_name" content="サイトネーム">
+    <meta property="og:title" content="タイトル">
+    <meta property="og:description" content="デフォルトのディスクリプション">
+    <meta property="og:image" content="https://testooooooooooooo.co.jp/images/ogp.png">
+    <meta property="og:url" content="https://testooooooooooooo.co.jp/index.php">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="サイトネーム" />
+    <meta name="twitter:title" content="タイトル" />
+    <meta name="twitter:description" content="デフォルトのディスクリプション" />
+    <meta name="twitter:image" content="https://testooooooooooooo.co.jp/images/ogp.png">
+    <meta name="twitter:url" content="https://testooooooooooooo.co.jp/index.php"> -->
+<?php } ?>
         <title>Laravel</title>
 
         <!-- Fonts -->
