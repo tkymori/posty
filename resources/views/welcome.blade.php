@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="TWITTER_TITLE" />
+        <meta property="og:url" content="https://posty-v2.herokuapp.com/" />
+        <meta property="og:title" content="OG_TITLE" />
+        <meta property="og:description" content="OG_DESC" />
+        <meta property="og:image" content="{{ asset('images/01.png')}}" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
