@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
     <?php
-        if (isset($_GET['result']) && is_numeric($_GET['result']) && $_GET['result'] == 1) {
+        if (isset($_GET['result']) && is_numeric($_GET['result'])) {
             $result = $_GET['result'];
             if ($result == 1) {
                 $title = "1ですー";
