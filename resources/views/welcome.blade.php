@@ -6,7 +6,7 @@
         <meta property="og:url" content="https://posty-v2.herokuapp.com/" />
         <meta property="og:title" content="OG_TITLE" />
         <meta property="og:description" content="OG_DESC" />
-        <meta property="og:image" content="https://posty-v2.herokuapp.com/images/01.jpg" />
+        <meta property="og:image" content="/images/01.jpg" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
