@@ -2,14 +2,14 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
     <?php
-        if (isset($_GET['trigger']) && is_numeric($_GET['trigger'])) {
-            $trigger = $_GET['trigger'];
+        if (isset($_GET['utm_content']) && is_numeric($_GET['utm_content'])) {
+            $trigger = $_GET['utm_content'];
             if ($trigger == 1) {
                 $title = "1ですー";
                 $description = "1のdesc";
             } else if ($trigger == 2) {
-                $title = "222ですー";
-                $description = "2222のdesc";
+                $title = "2ですー";
+                $description = "2のdesc";
             }
             ?>
                 <meta name="twitter:card" content="summary_large_image" />
