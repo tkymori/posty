@@ -15,8 +15,8 @@ if (isset($_GET['result']) && is_numeric($_GET['result']) && $_GET['result'] == 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="TWITTER_TITLE" />
         <meta property="og:url" content="https://posty-v2.herokuapp.com/" />
-        <meta property="og:title" content="OG_TITLE" />
-        <meta property="og:description" content="OG_DESC" />
+        <meta property="og:title" content=$max />
+        <meta property="og:description" content="{{$max}}" />
         <meta property="og:image" content="https://posty-v2.herokuapp.com/images/01.jpg" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
