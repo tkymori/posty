@@ -10,6 +10,9 @@
             } else if ($type == 2) {
                 $title = "2ですー";
                 $description = "2のdesc";
+            } else {
+                $title = "default";
+                $description = "default";
             }
             ?>
             <!-- twitter cardのサイズ -->
