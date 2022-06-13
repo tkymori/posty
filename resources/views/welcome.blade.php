@@ -4,10 +4,10 @@
     <?php
         if (isset($_GET['utm_content']) && is_numeric($_GET['utm_content'])) {
             $type = $_GET['utm_content'];
-            if ($type === 1) {
+            if ($type == 1) {
                 $title = "1ですー";
                 $description = "1のdesc";
-            } else if ($type === 2) {
+            } else if ($type == 2) {
                 $title = "2ですー";
                 $description = "2のdesc";
             } else {
