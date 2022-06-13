@@ -4,16 +4,26 @@
     <?php
         if (isset($_GET['utm_content']) && is_numeric($_GET['utm_content'])) {
             $type = $_GET['utm_content'];
-            if ($type == 1) {
-                $title = "1ですー";
-                $description = "1のdesc";
-            } else if ($type == 2) {
-                $title = "2ですー";
-                $description = "2のdesc";
-            } else {
-                $title = "default";
-                $description = "default";
-            }
+
+
+
+            switch($type) {
+
+                // 過去問一問一答のレベルアップ時
+                case 1:
+          
+                    $title = "1ですー";
+                    $description = "1のdesc";
+                  break;
+          
+                // 過去問一問一答のSランク時
+                case 2:
+                    $title = "2ですー";
+                    $description = "2のdesc";
+                  break;
+          
+              }
+
             ?>
             <!-- twitter cardのサイズ -->
             <meta name="twitter:card" content="summary_large_image" />
