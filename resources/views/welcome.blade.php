@@ -15,6 +15,7 @@
             } else {
                 $title = "default";
                 $description = "default";
+                $t = 3; 
             }
             
             ?>
