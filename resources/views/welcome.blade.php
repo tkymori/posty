@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
     <?php
-        if (isset($_GET['utm_content']) && is_string($_GET['utm_content'])) {
+        if (isset($_GET['utm_content'])) {
             $type = $_GET['utm_content'];
             if ($type == "kadokawa") {
                 $title = "1ですー";
