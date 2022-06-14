@@ -7,11 +7,11 @@
             if ($type == "kadokawa") {
                 $title = "1ですー";
                 $description = "1のdesc";
-                $t = 1
+                $t = 1;
             } else if ($type == "mori") {
                 $title = "2ですー";
                 $description = "2のdesc";
-                $t = 2
+                $t = 2;
             } else {
                 $title = "default";
                 $description = "default";
