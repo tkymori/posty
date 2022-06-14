@@ -22,6 +22,9 @@
                     $description = "2のdesc";
                   break;
           
+                  default:
+                  $title = "default";
+                  $description = "default";
               }
 
             ?>
