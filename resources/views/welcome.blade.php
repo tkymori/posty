@@ -2,14 +2,16 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
     <?php
-        if (isset($_GET['utm_content']) && is_numeric($_GET['utm_content'])) {
+        if (isset($_GET['utm_content']) && is_string($_GET['utm_content'])) {
             $type = $_GET['utm_content'];
-            if ($type == 1) {
+            if ($type == "kadokawa") {
                 $title = "1ですー";
                 $description = "1のdesc";
-            } else if ($type == 2) {
+                $t = 1
+            } else if ($type == "mori") {
                 $title = "2ですー";
                 $description = "2のdesc";
+                $t = 2
             } else {
                 $title = "default";
                 $description = "default";
@@ -23,7 +25,7 @@
             <meta property="og:title" content="{{$title}}" />
             <meta property="og:description" content="{{$description}}" />
             <!-- 画像URL -->
-            <meta property="og:image" content="https://posty-v2.herokuapp.com/images/{{$type}}.jpg" />
+            <meta property="og:image" content="https://posty-v2.herokuapp.com/images/{{$t}}.jpg" />
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php } ?>
