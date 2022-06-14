@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-    <?php
-        if (isset($_GET['utm_content'])) {
-            $type = $_GET['utm_content'];
-            if ($type == "kadokawa") {
-                $title = "1ですー";
-                $description = "1のdesc";
-                $t = 1;
-            } else if ($type == "mori") {
-                $title = "2ですー";
-                $description = "2のdesc";
-                $t = 2;
-            } else {
-                $title = "default";
-                $description = "default";
-                $t = 3; 
-            }
-            
-            ?>
+
             <!-- twitter cardのサイズ -->
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:site" content="@yanb9999" />
-            <meta property="og:url" content="https://posty-v2.herokuapp.com/" />
-            <meta property="og:title" content="{{$title}}" />
-            <meta property="og:description" content="{{$description}}" />
+            <?php $a = $_GET['utm_content'] ?>
+            <?php if ($a == 1) : ?>
+                <?php $imageParam = $_GET['utm_content']; ?>
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@yanb9999" />
+                <meta property="og:title" content="1だよ" />
+                <meta property="og:description" content="1111" />
+                <meta property="og:url" content="https://posty-v2.herokuapp.com/?utm_content=1" />
+                <meta property="og:image" content="https://posty-v2.herokuapp.com/images/1.jpg" />
+
+            <?php elseif ($a == 2) : ?>
+                <?php $imageParam = $_GET['utm_content']; ?>
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@yanb9999" />
+                <meta property="og:title" content="2だよ" />
+                <meta property="og:description" content="2222" />
+                <meta property="og:url" content="https://posty-v2.herokuapp.com/?utm_content=2" />
+                <meta property="og:image" content="https://posty-v2.herokuapp.com/images/2.jpg" />
+            <?php endif; ?>
             <!-- 画像URL -->
-            <meta property="og:image" content="https://posty-v2.herokuapp.com/images/{{$t}}.jpg" />
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php } ?>
+
         <title>Laravel</title>
 
         <!-- Fonts -->
