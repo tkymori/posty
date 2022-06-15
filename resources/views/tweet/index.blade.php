@@ -14,3 +14,6 @@
 <body>
 <p>{{ $type }}</p>
 </body>
+<script>
+    window.location.replace("https://www.yahoo.co.jp/");
+</script>
