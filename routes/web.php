@@ -12,6 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('tweet.index');
+    return view('welcome');
 });
 Route::get('tweet/redirect_hp', 'TweetController@redirectHp');
