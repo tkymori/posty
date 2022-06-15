@@ -17,6 +17,10 @@ class RedirectController extends Controller
             $type = 2;
             $title = "2だよ";
             $discription = "2DISCRIPTION";
+        } else {
+            $type = 3;
+            $title = "3だよ";
+            $discription = "3DISCRIPTION";   
         }
         return view('tweet.index', compact('title', 'discription', 'type'));
     }
