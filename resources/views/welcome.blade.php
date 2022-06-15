@@ -1,44 +1,7 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-    <?php
-        if (isset($_GET['utm_content']) && is_numeric($_GET['utm_content'])) {
-            $type = $_GET['utm_content'];
-
-
-
-            switch($type) {
-
-                // 過去問一問一答のレベルアップ時
-                case 1:
-          
-                    $title = "1ですー";
-                    $description = "1のdesc";
-                  break;
-          
-                // 過去問一問一答のSランク時
-                case 2:
-                    $title = "2ですー";
-                    $description = "2のdesc";
-                  break;
-          
-                  default:
-                  $title = "default";
-                  $description = "default";
-              }
-
-            ?>
-            <!-- twitter cardのサイズ -->
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:site" content="@yanb9999" />
-            <meta property="og:url" content="https://posty-v2.herokuapp.com/" />
-            <meta property="og:title" content="{{$title}}" />
-            <meta property="og:description" content="{{$description}}" />
-            <!-- 画像URL -->
-            <meta property="og:image" content="https://posty-v2.herokuapp.com/images/{{$type}}.jpg" />
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php } ?>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Laravel</title>
 
         <!-- Fonts -->
