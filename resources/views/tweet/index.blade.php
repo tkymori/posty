@@ -14,5 +14,5 @@
 <body>
 </body>
 <script>
-    window.location.replace("https://www.yahoo.co.jp/");
+    window.location.replace("https://www.yahoo.co.jp/?bar={{$type}}");
 </script>
